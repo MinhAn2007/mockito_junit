@@ -16,6 +16,10 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.data:spring-data-jpa:3.2.3'
+	implementation 'org.springframework:spring-web:6.1.4'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mockito:mockito-core:5.11.0'
@@ -23,6 +27,7 @@ dependencies {
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
 // https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter
 	testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'
+	testImplementation 'io.projectreactor:reactor-test:3.4.10'
 
 }
 

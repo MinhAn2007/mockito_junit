@@ -1,6 +1,10 @@
-package com.example.demo;
+package com.example.demo.modules;
+
+import org.springframework.data.annotation.Id;
 
 public class User {
+    @Id
+    private Long id;
     private String name;
     private int age;
 
@@ -22,6 +26,13 @@ public class User {
 
     public User(String name, int age) {
         this.name = name;
+        this.age = age;
+    }
+
+    public User() {
+    }
+
+    public User(int age) {
         this.age = age;
     }
 }
